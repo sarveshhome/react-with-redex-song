@@ -1,6 +1,6 @@
 //Action creater
 
-const selectSong = (song) => {
+const SelectSong = (song) => {
   //Retrun
 
   return {
@@ -9,4 +9,4 @@ const selectSong = (song) => {
   };
 };
 
-export default selectSong;
+export default SelectSong;
