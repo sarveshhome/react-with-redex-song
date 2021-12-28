@@ -1,4 +1,4 @@
-const SongReducer = () => {
+const songReducer = () => {
   return [
     { title: 'Shaam Shaandaar', duration: '4:09' },
     { title: 'Jiyo Re Bahubali', duration: '3:89' },
@@ -7,4 +7,10 @@ const SongReducer = () => {
   ];
 };
 
-export default SongReducer;
+const selectedSongReducer = (selectedSong = null, action) => {
+  if (action.type === 'SONG_SELECTED') {
+    return action.payload;
+  }
+
+  return selectedSong;
+};
