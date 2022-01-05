@@ -4,7 +4,7 @@ const selectSong = (song) => {
   //Retrun
 
   return {
-    type: 'Song_SELECTED',
+    type: 'SONG_SELECTED',
     payload: song,
   };
 };

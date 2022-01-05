@@ -1,10 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { selectSong } from '../actions/index.js';
+import { useDispatch } from 'react-redux';
 
 const SongList = (props) => {
   console.log('song list components ');
   console.log(props);
-
+  const dispatch = useDispatch();
+  const handleClick = () => {
+    dispatch(selectSong());
+  };
   return props.songs.map((song) => {
     return (
       <div className="ui divided list">
@@ -29,4 +34,4 @@ const mapStateToProps = (state) => {
   return { songs: state.songs };
 };
 
-export default connect(mapStateToProps)(SongList);
+export default connect(mapStateToProps, { selectSong })(SongList);
