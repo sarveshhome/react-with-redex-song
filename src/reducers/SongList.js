@@ -1,14 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { selectSong } from '../actions/index.js';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const SongList = (props) => {
   console.log('song list components ');
   console.log(props);
   const dispatch = useDispatch();
-  const handleClick = () => {
-    dispatch(selectSong());
+  const handleClick = (song) => {
+    dispatch(selectSong(song));
   };
   return props.songs.map((song) => {
     return (
