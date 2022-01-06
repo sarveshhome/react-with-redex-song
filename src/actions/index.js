@@ -1,12 +1,10 @@
 //Action creater
 
-const selectSong = (song) => {
-  //Retrun
+export const selectSong = (song) => {
+  console.log('act---', song);
 
   return {
-    type: 'Song_SELECTED',
+    type: 'SONG_SELECTED',
     payload: song,
   };
 };
-
-export default selectSong;
