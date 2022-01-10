@@ -14,4 +14,6 @@
 
 > mapStateToProps is declared with two parameters, the second one being optional. The first parameter is the current state of the Redux store. The second parameter, if passed, is an object of the props passed to the component
 
+
+
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-8q76ca)
