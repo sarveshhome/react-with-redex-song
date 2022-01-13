@@ -13,7 +13,6 @@ const SongDetail = ({ song }) => {
     </div>
   );
 };
-
 const mapStateToProps = (state) => {
   return { song: state.selectedSong };
 };
